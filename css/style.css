@@ -1,0 +1,180 @@
+* {
+  font-family: Arial, Verdana, sans-serif;
+  color: #665544;
+  text-align: center;
+}
+
+body {
+  width: 90%;
+  margin: 0 auto;
+  background-image: url("https://i.pinimg.com/736x/be/4c/7b/be4c7bb40dba7e51fb063565f7f4a398.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#content {
+  overflow: auto;
+}
+
+#nav, #feature, #footer, #textbox, #textbox2, #textbox3, #contactMe{
+  margin: 1%;
+}
+
+.column1, .column2, .column3, .column4, .column5, .mod5, .mod6, .mod7, .mod8{
+  width: 31.3%;
+  float: left;
+  margin: 1%;
+}
+
+.creative1, .creative2{
+  width: 45%;
+  margin: 1%; 
+  height: 450px;
+}
+
+.column3 {
+  margin-right: 0%;
+}
+
+li {
+  display: inline;
+  padding: 0.5em;
+}
+
+#nav, #footer, #textbox, #textbox2, #textbox3, #contactMe{
+  background-color: #efefef;
+  padding: .5%;
+}
+
+#feature, .article {
+  height: 10em;
+  margin-bottom: 1em;
+  background-color: #efefef;
+}
+
+.column1{
+  background-color: lightblue;
+}
+
+.column2{
+  background-color: plum;
+}
+
+.column3{
+  background-color: lightpink;
+}
+
+.column4{
+  background-color: lightgreen;
+}
+
+.column5{
+  background-color: lightsalmon;
+  float: right;
+}
+
+.mod5{
+  background-color: lightcoral;
+}
+
+.mod6{
+  background-color: palevioletred;
+}
+
+.mod7{
+  background-color: beige;
+}
+
+.mod8{
+  background-color: aquamarine;
+  float: right;
+}
+
+.creative1{
+  background-color: lightskyblue;
+  float: left;
+}
+
+.creative2{
+  background-color:lightseagreen;
+  float: right;
+}
+
+.creative3{
+  display: inline-block;
+  background-color: lightcoral;
+  float: none;
+  text-align: center;
+  width: 25%;
+  margin: 1%; 
+  height: 200px;
+  
+}
+
+.creative3 iframe{
+  width: 80%
+}
+
+.creative1 iframe, .creative2 img{
+  width: 80%;
+  height: 80%;
+}
+
+#feature{
+  background-color: lime;
+  background-image: url("https://images.saymedia-content.com/.image/t_share/MTk2NzY3MjA5ODc0MjY5ODI2/top-10-cutest-cat-photos-of-all-time.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
+
+#footer, #textbox, #textbox2, #textbox3, #contactMe{
+  background-color: azure;
+  font-size: 25px;
+}
+
+#nav{
+  background-color: lightgoldenrodyellow;
+}
+
+h1 {
+  font-family: 'TruenoRegular';
+  font-weight: bold;
+  font-style: normal;
+  font-size: 40px;
+}
+
+.column1 img, .column2 img, .column3 img, .column4 img, .column5 img, .mod5 img, .mod6 img, .mod7 img, .mod8 img{
+  width: auto;
+  height: 90px ;
+}
+
+.article{
+  height: 200px;
+}
+
+#nav ul{
+  font-size: 24px;
+}
+
+p{
+  font-size: 18px;
+}
+
+#textbox p, #textbox2 p, #textbox3 p{
+  font-size: 21px;
+}
+
+.creative1 p, .creative2 p, .creative3 p{
+  font-size: 22px;
+  
+}
+
+br {
+   display: block;
+  font-size: 18px;
+}
+
+.warning {
+  color:red;
+}
