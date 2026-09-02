@@ -163,17 +163,6 @@ li {
   width: 100%;
 }
 
-.transparent-gif {
-  opacity: 0.6;              /* Makes GIFs see-through (0.0 = invisible, 1.0 = solid) */
-  max-width: 30%;            /* Prevents GIFs from overflowing the screen row */
-  height: auto;              /* Maintains image aspect ratio */
-  transition: opacity 0.3s;  /* Optional: smooth hover transition */
-}
-
-/* Optional: restores full opacity when hovering over a GIF */
-.transparent-gif:hover {
-  opacity: 1.0;
-}
 
 h1 {
   font-family: 'TruenoRegular';
