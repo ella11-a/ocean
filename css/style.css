@@ -363,7 +363,7 @@ h2, #timeline-section h2 {
 }
 
 #cat-gallery {
-  display: inline-flex;
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
@@ -372,6 +372,7 @@ h2, #timeline-section h2 {
   padding: 15px;
   border-radius: 12px;
   margin: 20px auto;
+  width: fit-content !important; 
   max-width: 100%;
 }
 
