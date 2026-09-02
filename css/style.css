@@ -371,7 +371,7 @@ h2, #timeline-section h2 {
   text-align: left;
 }
 
-/* CAT GALLERY (Flexbox Centered) */
+
 #cat-gallery {
   display: flex;
   flex-wrap: wrap;
@@ -382,6 +382,8 @@ h2, #timeline-section h2 {
   padding: 15px;
   border-radius: 12px;
   margin: 20px auto;
+  width: fit-content;
+  max-width: 100%;
 }
 
 .small-picture {
