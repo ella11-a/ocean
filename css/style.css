@@ -20,7 +20,7 @@ body {
   margin: 1%;
 }
 
-
+/*  makes it looks nice and consistent
 #cat-gallery {
     display: flex;
     flex-wrap: wrap;
@@ -38,7 +38,21 @@ body {
     margin: 0;
 }
 
+*/
 
+#cat-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    background-color: lightpink;
+    padding: 15px;
+}
+
+.small-picture {
+    width: 200px;
+    height: auto !important;
+}
 
 .column1, .column2, .column3, .column4, .column5, .mod5, .mod6, .mod7, .mod8{
   width: 31.3%;
