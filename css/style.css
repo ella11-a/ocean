@@ -29,7 +29,8 @@ body {
 .small-picture {
     width: 200px;
     height: 800px;
-    object-fit: cover;
+    object-fit: contain;
+    margin: 8px;
 }
 
 .column1, .column2, .column3, .column4, .column5, .mod5, .mod6, .mod7, .mod8{
