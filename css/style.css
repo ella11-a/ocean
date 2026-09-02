@@ -569,3 +569,81 @@ li {
   line-height: 1.5;
   text-align: left;
 }
+
+/* Mobile Responsive Adjustments */
+@media screen and (max-width: 600px) {
+  body {
+    width: 95%; /* Use more screen real estate on mobile */
+    padding-bottom: 20px;
+  }
+
+  /* Make navigation items stack or fit comfortably */
+  #nav ul {
+    font-size: 16px;
+  }
+
+  #nav li {
+    display: inline-block;
+    padding: 4px 6px;
+  }
+
+  /* Cat gallery: switch to 2 columns on phones */
+  #cat-gallery {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 8px;
+    padding: 10px;
+  }
+
+  .small-picture {
+    height: 160px; /* Slightly shorter frame for mobile screens */
+  }
+
+  /* Adjust padding inside cards so text doesn't hit the edges */
+  .love-letter, 
+  .journal-card, 
+  .timer-card, 
+  .reasons-container, 
+  .music-card {
+    padding: 20px 18px;
+  }
+
+  .love-letter p, 
+  .journal-body p {
+    font-size: 16px; /* Slightly smaller text for better readability */
+  }
+
+  /* Stack countdown timer boxes smaller */
+  #countdown {
+    gap: 8px;
+  }
+
+  .time-box {
+    min-width: 55px;
+    padding: 8px 10px;
+  }
+
+  .time-box span {
+    font-size: 20px;
+  }
+
+  .time-box label {
+    font-size: 10px;
+  }
+
+  /* Shift timeline slightly left to fit phone screens */
+  .timeline {
+    padding-left: 0;
+  }
+
+  .timeline::before {
+    left: 10px;
+  }
+
+  .timeline-dot {
+    left: 1px;
+  }
+
+  .timeline-item {
+    padding-left: 32px;
+  }
+}
