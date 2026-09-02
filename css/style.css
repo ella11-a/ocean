@@ -31,19 +31,20 @@ body {
 
 
 #cat-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
+  display: grid;
+  /* Creates 4 equal-width columns. Change '4' to '5' if you want 5 per row */
+  grid-template-columns: repeat(5, 1fr); 
+  gap: 12px;
   background-color: lightpink;
   padding: 15px;
+  border-radius: 12px;
 }
 
 .small-picture {
-  width: 220px;         /* Gives every photo a larger base size */
-  height: 280px;        /* Consistent frame height */
-  object-fit: cover;    /* Fills the box cleanly without stretching or cropping distortion */
-  border-radius: 8px;   /* Optional: rounds image corners slightly */
+  width: 100%;          /* Forces the image to fill its grid column */
+  height: 200px;        /* Fixed height for uniformity */
+  object-fit: cover;
+  border-radius: 8px;
 }
 
 .column1, .column2, .column3, .column4, .column5, .mod5, .mod6, .mod7, .mod8{
