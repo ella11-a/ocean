@@ -20,25 +20,7 @@ body {
   margin: 1%;
 }
 
-/*  makes it looks nice and consistent
-#cat-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-    background-color: lightpink;
-    padding: 15px;
-}
 
-.small-picture {
-    width: 200px;
-    height: auto !important;
-    flex-shrink: 0;
-    display: block;
-    margin: 0;
-}
-
-*/
 
 #cat-gallery {
   display: flex;
@@ -171,6 +153,26 @@ li {
 
 #nav{
   background-color: lightgoldenrodyellow;
+}
+
+#gif-container {
+  display: flex;             /* Aligns the GIFs in a horizontal row */
+  justify-content: center;   /* Centers the row on the screen */
+  align-items: center;       /* Vertically aligns the GIFs */
+  gap: 15px;                 /* Adds space between each GIF */
+  width: 100%;
+}
+
+.transparent-gif {
+  opacity: 0.6;              /* Makes GIFs see-through (0.0 = invisible, 1.0 = solid) */
+  max-width: 30%;            /* Prevents GIFs from overflowing the screen row */
+  height: auto;              /* Maintains image aspect ratio */
+  transition: opacity 0.3s;  /* Optional: smooth hover transition */
+}
+
+/* Optional: restores full opacity when hovering over a GIF */
+.transparent-gif:hover {
+  opacity: 1.0;
 }
 
 h1 {
