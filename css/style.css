@@ -1,3 +1,4 @@
+ 
 * {
   font-family: 'Arial', Verdana, sans-serif;
   color: #665544;
@@ -5,118 +6,12 @@
   box-sizing: border-box;
 }
 
-
-/* Navigation Menu Container */
-#nav {
-  background-color: transparent; /* Removes background box around navigation */
-  margin: 20px 0;
-}
-
-#nav ul {
-  list-style-type: none;
+html, body {
+  width: 100% !important;
+  max-width: 100% !important;
+  overflow-x: hidden;
+  margin: 0 auto !important;
   padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 12px;                  /* Adds space between button links */
-}
-
-#nav li {
-  display: inline-block;
-  padding: 0;                 /* Clear padding from <li> so <a> controls size */
-}
-
-/* Button-Style Links */
-#nav a {
-  display: inline-block;
-  background-color: #ffe4e1;  /* Soft misty rose background */
-  color: #665544;            /* Soft brown text color */
-  font-size: 18px;
-  font-weight: bold;
-  text-decoration: none;     /* Removes default link underline */
-  padding: 12px 22px;         /* Creates a button shape */
-  border-radius: 25px;        /* Makes rounded pill edges */
-  border: 2px solid #ffb6c1;  /* Soft pink border */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: all 0.2s ease-in-out; /* Smooth hover transition */
-}
-
-/* Hover & Active Effects */
-#nav a:hover {
-  background-color: #ffb6c1;  /* Darkens to light pink on hover */
-  color: #ffffff;             /* Turns text white */
-  transform: translateY(-3px);/* Lifts button up slightly */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-#nav a:active {
-  transform: translateY(0);   /* Press effect when clicked */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* 50 Reasons Section */
-#reasons-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 40px 0;
-}
-
-#reasons-section h2 {
-  color: #fff;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  font-size: 28px;
-  margin-bottom: 20px;
-}
-
-.reasons-container {
-  background-color: rgba(255, 255, 255, 0.9);
-  backdrop-filter: blur(5px);
-  border-radius: 16px;
-  border: 2px solid rgba(216, 112, 147, 0.5);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-  max-width: 650px;
-  width: 100%;
-  max-height: 450px;          /* Sets a scrollable height box */
-  overflow-y: auto;           /* Allows smooth scrolling through all 50 items */
-  padding: 25px 35px;
-}
-
-.reasons-list {
-  padding-left: 20px;
-  margin: 0;
-  text-align: left;
-}
-
-.reasons-list li {
-  display: list-item;         /* Restores traditional numbered list formatting */
-  font-size: 16px;
-  line-height: 1.6;
-  color: #554433;
-  margin-bottom: 12px;
-  padding-left: 5px;
-  text-align: left;
-}
-
-.reasons-list li::marker {
-  color: #d87093;
-  font-weight: bold;
-}
-
-/* Styled Scrollbar */
-.reasons-container::-webkit-scrollbar {
-  width: 8px;
-}
-
-.reasons-container::-webkit-scrollbar-track {
-  background: rgba(255, 192, 203, 0.3);
-  border-radius: 8px;
-}
-
-.reasons-container::-webkit-scrollbar-thumb {
-  background: #d87093;
-  border-radius: 8px;
 }
 
 body {
@@ -130,221 +25,6 @@ body {
   padding-bottom: 40px;
 }
 
-
-#content {
-  overflow: auto;
-}
-
-#nav, #feature, #textbox, #textbox2, #textbox3, #contactMe{
-  margin: 1%;
-}
-
-
-
-#cat-gallery {
-  display: grid;
-  /* Creates 4 equal-width columns. Change '4' to '5' if you want 5 per row */
-  grid-template-columns: repeat(5, 1fr); 
-  gap: 12px;
-  background-color: lightpink;
-  padding: 15px;
-  border-radius: 12px;
-}
-
-.small-picture {
-  width: 100%;          /* Forces the image to fill its grid column */
-  height: 200px;        /* Fixed height for uniformity */
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-.column1, .column2, .column3, .column4, .column5, .mod5, .mod6, .mod7, .mod8{
-  width: 31.3%;
-  float: left;
-  margin: 1%;
-}
-
-.creative1, .creative2{
-  width: 45%;
-  margin: 1%; 
-  height: 450px;
-}
-
-.column3 {
-  margin-right: 0%;
-}
-
-li {
-  display: inline;
-  padding: 0.5em;
-}
-
-#nav, #textbox, #textbox2, #textbox3, #contactMe{
-  background-color: #efefef;
-  padding: .5%;
-}
-
-#footer {
-  background-color: transparent; 
-  color: white !important;             
-  font-weight: bold;        
-  font-size: 32px;          
-  margin: 1%;
-  padding: .5%;
-}
-
-#footer p {
-  color: white !important;
-  font-weight: bold;
-  font-size: 28px;
-  margin-bottom: 15px;
-  text-align: center;
-}
-
-#feature, .article {
-  height: 10em;
-  margin-bottom: 1em;
-  background-color: #efefef;
-}
-
-.column1{
-  background-color: lightblue;
-}
-
-.column2{
-  background-color: plum;
-}
-
-.column3{
-  background-color: lightpink;
-}
-
-.column4{
-  background-color: lightgreen;
-}
-
-.column5{
-  background-color: lightsalmon;
-  float: right;
-}
-
-.mod5{
-  background-color: lightcoral;
-}
-
-.mod6{
-  background-color: palevioletred;
-}
-
-.mod7{
-  background-color: beige;
-}
-
-.mod8{
-  background-color: aquamarine;
-  float: right;
-}
-
-.creative1{
-  background-color: lightskyblue;
-  float: left;
-}
-
-.creative2{
-  background-color:lightseagreen;
-  float: right;
-}
-
-.creative3{
-  display: inline-block;
-  background-color: lightcoral;
-  float: none;
-  text-align: center;
-  width: 25%;
-  margin: 1%; 
-  height: 200px;
-  
-}
-
-.creative3 iframe{
-  width: 80%
-}
-
-.creative1 iframe, .creative2 img{
-  width: 80%;
-  height: 80%;
-}
-
-
-#feature{
-  background-color: lime;
-  background-image: url("https://images.saymedia-content.com/.image/t_share/MTk2NzY3MjA5ODc0MjY5ODI2/top-10-cutest-cat-photos-of-all-time.jpg");
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: contain;
-}
-
-#textbox, #textbox2, #textbox3, #contactMe{
-  background-color: azure;
-  font-size: 25px;
-}
-
-#nav{
-  background-color: lightgoldenrodyellow;
-}
-
-#gif-container {
-  display: flex;             /* Aligns the GIFs in a horizontal row */
-  justify-content: center;   /* Centers the row on the screen */
-  align-items: center;       /* Vertically aligns the GIFs */
-  gap: 15px;                 /* Adds space between each GIF */
-  width: 100%;
-}
-
-
-h1 {
-  font-family: 'TruenoRegular';
-  font-weight: bold;
-  font-style: normal;
-  font-size: 40px;
-}
-
-.column1 img, .column2 img, .column3 img, .column4 img, .column5 img, .mod5 img, .mod6 img, .mod7 img, .mod8 img{
-  width: auto;
-  height: 90px ;
-}
-
-.article{
-  height: 200px;
-}
-
-#nav ul{
-  font-size: 24px;
-}
-
-p{
-  font-size: 18px;
-}
-
-#textbox p, #textbox2 p, #textbox3 p{
-  font-size: 21px;
-}
-
-.creative1 p, .creative2 p, .creative3 p{
-  font-size: 22px;
-  
-}
-
-br {
-   display: block;
-  font-size: 18px;
-}
-
-.warning {
-  color:red;
-}
-
-
 h1 {
   font-family: 'TruenoRegular', Arial, sans-serif;
   font-weight: bold;
@@ -354,37 +34,63 @@ h1 {
   margin-top: 20px;
 }
 
-#nav {
-  background-color: rgba(255, 250, 205, 0.9);
-  padding: 12px;
-  border-radius: 12px;
-  margin-bottom: 30px;
-}
-
-#nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+p {
   font-size: 18px;
 }
 
-li {
+br {
+  display: block;
+  font-size: 18px;
+}
+
+ 
+#nav {
+  background-color: transparent;
+  margin: 20px 0;
+}
+
+#nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+#nav li {
   display: inline-block;
-  padding: 0 10px;
+  padding: 0;
 }
 
 #nav a {
+  display: inline-block;
+  background-color: #ffe4e1;
   color: #665544;
-  text-decoration: none;
+  font-size: 18px;
   font-weight: bold;
-  transition: color 0.2s;
+  text-decoration: none;
+  padding: 12px 22px;
+  border-radius: 25px;
+  border: 2px solid #ffb6c1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease-in-out;
 }
 
 #nav a:hover {
-  color: #d87093;
+  background-color: #ffb6c1;
+  color: #ffffff;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
+#nav a:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
+ 
 #letter-section {
   display: flex;
   justify-content: center;
@@ -478,32 +184,85 @@ li {
   margin-bottom: 0;
 }
 
-/* Music Section */
-#music-section, #timer-section, #timeline-section {
+ 
+#reasons-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 40px 0;
 }
 
-#music-section h2, #timeline-section h2 {
+#reasons-section h2 {
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.reasons-container {
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(5px);
+  border-radius: 16px;
+  border: 2px solid rgba(216, 112, 147, 0.5);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  max-width: 650px;
+  width: 100%;
+  max-height: 450px;
+  overflow-y: auto;
+  padding: 25px 35px;
+}
+
+.reasons-list {
+  padding-left: 20px;
+  margin: 0;
+  text-align: left;
+}
+
+.reasons-list li {
+  display: list-item;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #554433;
+  margin-bottom: 12px;
+  padding-left: 5px;
+  text-align: left;
+}
+
+.reasons-list li::marker {
+  color: #d87093;
+  font-weight: bold;
+}
+
+.reasons-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.reasons-container::-webkit-scrollbar-track {
+  background: rgba(255, 192, 203, 0.3);
+  border-radius: 8px;
+}
+
+.reasons-container::-webkit-scrollbar-thumb {
+  background: #d87093;
+  border-radius: 8px;
+}
+
+  
+#timer-section, #timeline-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px 0;
+}
+
+h2, #timeline-section h2 {
   color: #fff;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
   font-size: 28px;
   margin-bottom: 15px;
 }
 
-.music-card {
-  background-color: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(5px);
-  padding: 15px;
-  border-radius: 16px;
-  width: 100%;
-  max-width: 650px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-}
 
-/* Live Timer Styling */
 .timer-card {
   background-color: rgba(255, 240, 245, 0.9);
   backdrop-filter: blur(5px);
@@ -549,7 +308,6 @@ li {
   text-transform: uppercase;
 }
 
-/* Timeline Layout */
 .timeline {
   position: relative;
   max-width: 650px;
@@ -619,24 +377,62 @@ li {
   text-align: left;
 }
 
-/* Mobile Responsive Adjustments */
+
+#cat-gallery {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+  background-color: lightpink;
+  padding: 15px;
+  border-radius: 12px;
+  margin: 20px auto;
+}
+
+.small-picture {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+#gif-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+}
+
+#footer {
+  background-color: transparent;
+  color: white !important;
+  font-weight: bold;
+  font-size: 32px;
+  margin: 1%;
+  padding: .5%;
+}
+
+#footer p {
+  color: white !important;
+  font-weight: bold;
+  font-size: 28px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+
 @media screen and (max-width: 600px) {
   body {
-    width: 95%; /* Use more screen real estate on mobile */
+    width: 95%;
     padding-bottom: 20px;
   }
 
-  /* Make navigation items stack or fit comfortably */
-  #nav ul {
-    font-size: 16px;
+  #header, #nav, #cat-gallery, #footer {
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 
-  #nav li {
-    display: inline-block;
-    padding: 4px 6px;
-  }
-
-  /* Cat gallery: switch to 2 columns on phones */
   #cat-gallery {
     grid-template-columns: repeat(2, 1fr) !important;
     gap: 8px;
@@ -644,10 +440,9 @@ li {
   }
 
   .small-picture {
-    height: 160px; /* Slightly shorter frame for mobile screens */
+    height: 160px;
   }
 
-  /* Adjust padding inside cards so text doesn't hit the edges */
   .love-letter, 
   .journal-card, 
   .timer-card, 
@@ -658,10 +453,9 @@ li {
 
   .love-letter p, 
   .journal-body p {
-    font-size: 16px; /* Slightly smaller text for better readability */
+    font-size: 16px;
   }
 
-  /* Stack countdown timer boxes smaller */
   #countdown {
     gap: 8px;
   }
@@ -679,7 +473,6 @@ li {
     font-size: 10px;
   }
 
-  /* Shift timeline slightly left to fit phone screens */
   .timeline {
     padding-left: 0;
   }
