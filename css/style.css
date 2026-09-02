@@ -32,8 +32,10 @@ body {
 
 .small-picture {
     width: 200px;
-    height: auto;
-    margin: 8px;
+    height: auto !important;
+    flex-shrink: 0;
+    display: block;
+    margin: 0;
 }
 
 
