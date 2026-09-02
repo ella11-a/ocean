@@ -12,12 +12,6 @@ body {
   background-size: cover;
 }
 
-#cat-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-}
 #content {
   overflow: auto;
 }
@@ -27,24 +21,22 @@ body {
 }
 
 
+#cat-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    background-color: lightpink;
+    padding: 15px;
+}
+
 .small-picture {
     width: 200px;
     height: auto;
-    object-fit: contain;
     margin: 8px;
 }
 
-.cat-card {
-    width: 200px;
-    padding: 10px;
-    background-color: lightpink;
-}
 
-.cat-card img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
 
 .column1, .column2, .column3, .column4, .column5, .mod5, .mod6, .mod7, .mod8{
   width: 31.3%;
