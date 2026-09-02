@@ -16,7 +16,7 @@ body {
   overflow: auto;
 }
 
-#nav, #feature, #footer, #textbox, #textbox2, #textbox3, #contactMe{
+#nav, #feature, #textbox, #textbox2, #textbox3, #contactMe{
   margin: 1%;
 }
 
@@ -153,7 +153,7 @@ li {
   background-size: contain;
 }
 
-#footer, #textbox, #textbox2, #textbox3, #contactMe{
+#textbox, #textbox2, #textbox3, #contactMe{
   background-color: azure;
   font-size: 25px;
 }
