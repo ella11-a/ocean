@@ -372,8 +372,8 @@ h2, #timeline-section h2 {
   padding: 15px;
   border-radius: 12px;
   margin: 20px auto;
-  width: 90%;
-  max-width: 1000px;
+  width: fit-content;
+  max-width: 100%;
   box-sizing: border-box;
 }
 
