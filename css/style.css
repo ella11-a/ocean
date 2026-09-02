@@ -1,16 +1,24 @@
 * {
-  font-family: Arial, Verdana, sans-serif;
+  font-family: 'Arial', Verdana, sans-serif;
   color: #665544;
   text-align: center;
+  box-sizing: border-box;
 }
+
+
+
 
 body {
   width: 90%;
+  max-width: 900px;
   margin: 0 auto;
   background-image: url("https://i.pinimg.com/736x/be/4c/7b/be4c7bb40dba7e51fb063565f7f4a398.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
+  padding-bottom: 40px;
 }
+
 
 #content {
   overflow: auto;
@@ -222,4 +230,83 @@ br {
 
 .warning {
   color:red;
+}
+
+
+h1 {
+  font-family: 'TruenoRegular', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 42px;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  margin-top: 20px;
+}
+
+#nav {
+  background-color: rgba(255, 250, 205, 0.9);
+  padding: 12px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+#nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+}
+
+li {
+  display: inline-block;
+  padding: 0 10px;
+}
+
+#nav a {
+  color: #665544;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+#nav a:hover {
+  color: #d87093;
+}
+
+
+#letter-section {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.love-letter {
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(5px);
+  padding: 35px 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  max-width: 650px;
+  text-align: center;
+  border: 2px solid rgba(255, 192, 203, 0.6);
+}
+
+.love-letter p {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #554433;
+  margin-bottom: 20px;
+}
+
+.love-letter .love-declaration {
+  font-size: 24px;
+  font-weight: bold;
+  color: #d87093;
+  margin: 25px 0;
+}
+
+.love-letter .signature {
+  font-size: 20px;
+  font-style: italic;
+  color: #665544;
+  margin-bottom: 0;
 }
