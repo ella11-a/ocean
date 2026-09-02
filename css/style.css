@@ -363,10 +363,9 @@ h2, #timeline-section h2 {
 }
 
 #cat-gallery {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 160px);
   justify-content: center;
-  align-items: center;
   gap: 12px;
   background-color: lightpink;
   padding: 15px;
@@ -374,7 +373,6 @@ h2, #timeline-section h2 {
   margin: 20px auto;
   width: fit-content;
   max-width: 100%;
-  box-sizing: border-box;
 }
 
 .small-picture {
