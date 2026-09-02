@@ -26,11 +26,24 @@ body {
   margin: 1%;
 }
 
+
 .small-picture {
     width: 200px;
-    height: 800px;
+    height: auto;
     object-fit: contain;
     margin: 8px;
+}
+
+.cat-card {
+    width: 200px;
+    padding: 10px;
+    background-color: lightpink;
+}
+
+.cat-card img {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .column1, .column2, .column3, .column4, .column5, .mod5, .mod6, .mod7, .mod8{
