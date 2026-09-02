@@ -66,7 +66,7 @@ li {
 
 #footer {
   background-color: transparent; 
-  color: white;             
+  color: white !important;             
   font-weight: bold;        
   font-size: 32px;          
   margin: 1%;
@@ -146,6 +146,7 @@ li {
   width: 80%;
   height: 80%;
 }
+
 
 #feature{
   background-color: lime;
