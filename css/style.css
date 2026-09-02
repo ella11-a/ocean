@@ -59,8 +59,15 @@ li {
   padding: 0.5em;
 }
 
-#nav, #footer, #textbox, #textbox2, #textbox3, #contactMe{
+#nav, #textbox, #textbox2, #textbox3, #contactMe{
   background-color: #efefef;
+  padding: .5%;
+}
+
+#footer {
+  background-color: transparent; 
+  font-size: 25px;
+  margin: 1%;
   padding: .5%;
 }
 
